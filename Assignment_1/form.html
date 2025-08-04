@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Registration Form </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Hospital Registration Form</h2>
+<form action="data.php">
+  <label for="fullname">Full Name:</label>
+  <input type="text">
+  <br>
+  <br>
+    <label>Gender:<input type="radio" name="gender" value=""> Male</label>
+  <label><input type="radio" name="gender" value=""> Female</label>
+<label><input type="radio" name="gender" value=""> Other</label>
+<br>
+<br>
+<label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <br>
+    <br>
+
+    <label for="blood">Blood Group:</label>
+    <select name="blood">
+      <option value="">--Select--</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+    </select><br><br>
+
+        <label for="phone" >Mobile No:</label>
+  <input type="tel">
+  <br>
+  <br>
+    <label for="department">Checkup Department:</label>
+    <select id="department" name="department">
+      <option value="">--Select Department--</option>
+      <option value="general">General Medicine</option>
+      <option value="cardiology">Cardiology</option>
+      <option value="orthopedics">Orthopedics</option>
+      <option value="neurology">Neurology</option>
+      <option value="pediatrics">Pediatrics</option>
+      <option value="gynecology">Gynecology</option>
+      <option value="dermatology">Dermatology</option>
+    </select><br><br>
+
+     <label for="timeslot">Preferred Time Slot:</label>
+    <select id="timeslot" name="timeslot">
+      <option value="">--Select Time Slot--</option>
+      <option value="9-10am">09:00 AM - 10:30 AM</option>
+      <option value="10-11am">11:00 AM - 12:30 AM</option>
+      <option value="2-3pm">02:00 PM - 04:00 PM</option>
+    </select><br><br>
+
+      <label for="guardianname" >Guardian Name:</label>
+  <input type="text">
+  <br>
+  <br>
+  <label for="relation">Realation With Guardian:</label>
+    <select name="relation">
+      <option value="">--Select--</option>
+      <option value="Partner">Partner</option>
+      <option value="Parent">Parent</option>
+      <option value="Child">Child</option>
+      <option value="Sibling">Sibling</option>
+      <option value="Other">Other</option>
+      </select><br><br>
+
+
+
+<label>
+    <input type="checkbox" name="correctness">I Heareby Declare that all thre Information Provided is Correct
+  </label>
+<br>
+<br>
+<input type="reset" value="Reset Form" id="reset">
+   <input type="submit" value="Proceed For Payment" id="reset">
+
+</form>
+<br>
+<br>
+
+</body>
+</html>
