@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register here</title>
+    <style>
+        body {
+            background-color: rgb(191, 224, 224);
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            height: 550px;
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            position: relative;
+            text-align: center;
+
+        }
+
+        #register {
+            color: rgb(236, 3, 3);
+        }
+
+        #uptext {
+            position: absolute;
+            left: 30px;
+        }
+
+        #downbox {
+            position: absolute;
+            left: 30px;
+            width: 280px;
+        }
+
+        #terms {
+            position: relative;
+            left: -70px;
+        }
+
+        #button {
+            width: 300px;
+            height: 30px;
+            background-color: rgb(236, 3, 3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <h1 id="register">Register Here</h1>
+
+            <form>
+                <label for="name" id="uptext"> Name</label><br><br>
+                <input type="text" name="name" id="downbox" placeholder="Enter Your Name"><br><br>
+                <label for="email" id="uptext">Email Address</label><br><br>
+                <input type="email" namae="email" placeholder="Enter your email" id="downbox"><br><br>
+
+                <label for="password" id="uptext">Enter Password</label><br><br>
+                <input type="password" name="password" id="downbox" placeholder="Enter the Password"><br><br>
+
+                <label for="password" id="uptext">Confirm Password</label><br><br>
+                <input type="password" name="password" id="downbox" placeholder="Confirm the Password"><br><br>
+
+                <label>
+                    <input type="checkbox" name="everythingcorrect" id="uptext">All the above Information is Correct
+                </label>
+
+                <a href="terms.txt">
+                    <h5 id="terms">Terms and Conditions</h5>
+                </a>
+
+                <label>
+                    <input type="checkbox" name="readterms" id="uptext">I Have Read Terms And Conditions
+                </label><br><br>
+
+                <a href="order.html"><button type="button" id="button">Submit</button></a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
